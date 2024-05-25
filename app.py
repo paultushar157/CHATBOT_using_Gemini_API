@@ -13,7 +13,7 @@ client = MongoClient("mongodb://localhost:27017")
 db = client["user_details"]
 collection = db["details"]
 
-genai.configure(api_key="AIzaSyC8R6fumEYGPLYS1AADDXSA-cO5qmE8YrQ")
+genai.configure(api_key="YOUR API key")
 model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat(history=[])
 
